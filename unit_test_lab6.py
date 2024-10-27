@@ -78,7 +78,6 @@ class  SortingTest(unittest.TestCase) :
 
 
 d = SortingTest()
-
 d.test_binarySearch()
 d.test_BookStore()
 d.test_sorting()

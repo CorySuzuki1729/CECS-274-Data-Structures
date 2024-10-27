@@ -84,7 +84,7 @@ class  BinarySearchTreeTest(unittest.TestCase) :
         points = 0.5
         try:
             a = BookStore.BookStore()
-            self.assertAlmostEqual(a.loadCatalog("../books.txt"), 499813)
+            self.assertAlmostEqual(a.loadCatalog("books.txt"), 499813)
             points += 0.5
             a.addBookByPrefix("Tears of the S")
             b = a.removeFromShoppingCart()
@@ -111,9 +111,9 @@ class  BinarySearchTreeTest(unittest.TestCase) :
             a.add(2, "d")
             a.add(3, "e")
             a.add(3, "z")
-            self.assertAlmostEqual(1,1)
+            #self.assertAlmostEqual(1,1)
             self.assertAlmostEqual(a.find(1).__str__(), "a,b,c")
-            self.assertAlmostEqual(a.find(2).__str__(), "d") 
+            self.assertAlmostEqual(a.find(2).__str__(), "d")
             self.assertAlmostEqual(a.find(3).__str__(), "e,z")
             points += 2
         except:
@@ -121,4 +121,9 @@ class  BinarySearchTreeTest(unittest.TestCase) :
         finally:
             print(f"BinarySearchTreeWithDuplication: {points} Points")
     
-    
+
+#p = BinarySearchTreeTest()
+#print(p.test_binarytree())
+#print(p.test_calculator())
+#print(p.test_BookStore())
+#print(p.test_BinarySearchTreeWithDuplication())
